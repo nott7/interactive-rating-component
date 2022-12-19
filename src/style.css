@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: #141519;
+  font-family: "Overpass", sans-serif;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__container {
+  width: 400px;
+  height: 450px;
+  border-radius: 20px;
+  background: rgb(149, 158, 172);
+  background: linear-gradient(180deg, rgb(43, 45, 49) 0%, rgb(27, 32, 39) 80%);
+  padding: 40px;
+  box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.6);
+}
+
+.step1,
+.step2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.step {
+  display: none;
+}
+
+.active {
+  display: flex;
+}
+
+.card__rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__image--container {
+  width: 100%;
+}
+
+.card__image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(100, 99, 99, 0.158);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__image img {
+  width: 40%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.card__text h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.card__text p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.537);
+}
+
+.card__rating {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating__number {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(100, 99, 99, 0.158);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.rating__number:hover {
+  background-color: rgba(100, 99, 99, 0.57);
+}
+
+.selected {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.rating__number.selected:hover {
+    background-color: hsl(25, 97%, 55%);
+  }
+
+.card__button {
+  width: 100%;
+}
+
+.card__button button {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  border: transparent;
+  background: hsl(25, 97%, 53%);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card__button button:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  transform: scale(1.1);
+}
+
+.image__container img {
+  width: 100%;
+  height: 100%;
+}
+
+.summary__container {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: rgba(100, 99, 99, 0.158);
+}
+
+.summary__text {
+  font-size: 1rem;
+  color: hsl(25, 97%, 53%);
+}
+
+.thanks__container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.thanks__container h1 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.thanks__container p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.537);
+}
+
+@media screen and (max-width: 768px) {
+  .card__container {
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+  }
+
+  .card__image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .card__image img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .card__text h2 {
+    font-size: 1.5rem;
+  }
+
+  .card__text p {
+    font-size: 0.8rem;
+  }
+
+  .rating__number {
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .card__button button {
+    height: 40px;
+    font-size: 0.8rem;
+  }
+
+  .image__container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .summary__container {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: rgba(100, 99, 99, 0.158);
+  }
+
+  .summary__text {
+    font-size: 0.8rem;
+  }
+
+  .thanks__container h1 {
+    font-size: 1.5rem;
+  }
+
+  .thanks__container p {
+    font-size: 0.8rem;
+  }
+}
