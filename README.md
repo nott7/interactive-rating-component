@@ -19,15 +19,15 @@ Users should be able to:
 
 - Desktop Design 2:
 
-![](./screenshots/desktop-design2.png)
+![](./public/screenshots/desktop-design2.png)
 
 - Mobile Design:
 
-![](./screenshots/mobile-design.png)
+![](./public/screenshots/mobile-design.png)
 
 - Mobile Design 2:
 
-![](./screenshots/mobile-design2.png)
+![](./public/screenshots/mobile-design2.png)
 
 
 
